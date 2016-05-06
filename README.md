@@ -1,6 +1,6 @@
 # ThresholdChoiceMethods
 
-In this repository you can find an [example](ExampleTCM.md) of the use of the R code that implements different Threshold Choice Methods.
+In this repository you can find an [example](ExampleTCM.ipynb) of the use of the R code that implements different Threshold Choice Methods.
 
 These methods are described in the paper:
 ["A unified view of performance metrics: translating threshold choice into expected classification loss"](http://dl.acm.org/citation.cfm?id=2503332)
