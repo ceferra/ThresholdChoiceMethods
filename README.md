@@ -8,4 +8,4 @@ J Hernández-Orallo, P Flach, C Ferri - The Journal of Machine Learning Research
 
 This software has been developed by Cèsar Ferri, José Hernández Orallo and Peter Flach.
 
-![cost curves](http://users.dsic.upv.es/~flip/RDC/rdc.png)
+![cost curves](rdc.png)
