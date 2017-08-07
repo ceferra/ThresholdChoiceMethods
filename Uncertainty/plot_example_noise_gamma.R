@@ -1,6 +1,6 @@
 ########### per a vore un exemple
 ## Script to plot differnt levels of noise in the same plot. (valphabeta) # we select between RD and SD in lines 424-428
-setwd("/home/cesar/Dropbox/Thresholds/Nou")
+#setwd("/home/cesar/Dropbox/Thresholds/Nou")
 library("RWeka")
 library(caret)
 
@@ -37,7 +37,7 @@ valphabeta<-c(0,1,2,4,8,16,Inf)
 mcolors<-c("mistyrose2", "lightpink","violet","purple","mediumpurple3","mediumpurple4","black")
 
 Numiter<-1
-Numrep<-10000
+Numrep<-10
 prop<-0.5#percentage for training
 
 
@@ -64,7 +64,7 @@ destdir<-"explots/"
 #datasets<-c("breast-w.arff","spect_test.arff","liver-disorders.arff","haberman.arff")
 #datasets<-c("tic-tac-toe.arff")
 #selected<-2
-datasets<-list.files("data/")
+datasets<-list.files("../data/")
 datasets<-c("tic-tac-toe.arff")
 datasets<-c("monks1.arff")
 datasets<-c("credit-a.arff")
@@ -98,7 +98,7 @@ for (id in 1:length(datasets))
   #selected<-2
   msel<-1
   #prop<-1/4
-  datos <- read.arff(paste("data/",datasets[selected],sep=""))
+  datos <- read.arff(paste("../data/",datasets[selected],sep=""))
   
   # Asumimos que el estudio se hace en base al ultimo campo
   posParamEstudio<-length(datos[1,])
