@@ -34,7 +34,7 @@ args <- commandArgs(trailingOnly = TRUE)
 ###############################################
 
 set.seed(0)
-alphabeta<-Inf
+alphabeta<-0
 Numiter<-1
 
 prop<-0.5#percentage for training
@@ -82,7 +82,7 @@ datasets<-c("breast-w.arff")
 datasets<-c("credit-a.arff")
 
 methods<-c("J48","J48Unp","logist","NB","Stump","IBK10","IBK1","SVM","SVMp","PART","Majority","Random")
-methods<-c("SVM")
+methods<-c("logist")
 #methods<-c("Random")
 
 #pdf(paste(methods[1],"_",datasets[1],".pdf",sep=""))
